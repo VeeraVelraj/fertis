@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="MediaCenter, Template, eCommerce" />
+    <meta name="robots" content="all" />
+    <title>FarmGate- Seeds Store</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="api.js"></script>
+    <script src="product.js"></script>
+    <script src="categories.js"></script>
+    <script src="cart.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Customizable CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/blue.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl.transitions.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/rateit.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+
+    <!-- Icons/Glyphs -->
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow:200,300,300i,400,400i,500,500i,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    
+  </head>
+  <body class="cnt-home">
+    <!-- ============================================== HEADER ============================================== -->
+    <header class="header-style-1">
+      <!-- ============================================== TOP MENU ============================================== -->
+      <div class="top-bar animate-dropdown">
+        <div class="container">
+          <div class="header-top-inner">
+            <div class="cnt-account">
+              <ul class="list-unstyled">
+                <li class="myaccount">
+                  <a href="#"><span>My Account</span></a>
+                </li>
+                <li class="wishlist">
+                  <a href="#"><span>Wishlist</span></a>
+                </li>
+                <li class="header_cart hidden-xs">
+                  <a href="#"><span>My Cart</span></a>
+                </li>
+                <li class="check">
+                  <a href="#"><span>Checkout</span></a>
+                </li>
+                <li class="login">
+                  <a href="#"><span>Login</span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.cnt-account -->
+
+            <!-- /.cnt-cart -->
+            <div class="clearfix"></div>
+          </div>
+          <!-- /.header-top-inner -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.header-top -->
+      <!-- ============================================== TOP MENU : END ============================================== -->
+      <div class="main-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
+              <!-- ============================================================= LOGO ============================================================= -->
+              <div class="logo">
+                <a href="home.html">
+                  <img src="assets/images/FG_Logo.PNG" alt="logo" />
+                </a>
+              </div>
+              <!-- /.logo -->
+              <!-- ============================================================= LOGO : END ============================================================= -->
+            </div>
+            <!-- /.logo-holder -->
+
+            <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 top-search-holder">
+              <!-- /.contact-row -->
+              <!-- ============================================================= SEARCH AREA ============================================================= -->
+              <div class="search-area">
+                <form>
+                  <div class="control-group">
+                    <ul class="categories-filter animate-dropdown">
+                      <li class="dropdown">
+                        <a
+                          class="dropdown-toggle"
+                          data-toggle="dropdown"
+                          href="category.html"
+                          >Categories <b class="caret"></b
+                        ></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li role="presentation">
+                            <a
+                              role="menuitem"
+                              tabindex="-1"
+                              href="category.html"
+                            >
+                              <div id="productCategory"></div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <input class="search-field" placeholder="Search here..." />
+                    <a class="search-button" href="#"></a>
+                  </div>
+                </form>
+              </div>
+              <!-- /.search-area -->
+              <!-- ============================================================= SEARCH AREA : END ============================================================= -->
+            </div>
+            <!-- /.top-search-holder -->
+
+            <div
+              class="col-lg-2 col-md-3 col-sm-4 col-xs-12 animate-dropdown top-cart-row"
+            >
+              <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
+
+              <div class="dropdown dropdown-cart">
+                <a
+                  href="#"
+                  class="dropdown-toggle lnk-cart"
+                  data-toggle="dropdown"
+                >
+                  <div class="items-cart-inner">
+                    <div class="basket">
+                      <div class="basket-item-count">
+                        <span class="count">2</span>
+                      </div>
+                      <div class="total-price-basket">
+                        <span class="lbl">Shopping Cart</span>
+                        <span class="value">Rs 4580</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="cart-item product-summary">
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <div class="image">
+                            <a href="detail.html"
+                              ><img src="assets/images/products/p4.jpg" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                        <div class="col-xs-7">
+                          <h3 class="name">
+                            <a href="index8a95.html?page-detail"
+                              >Simple Product</a
+                            >
+                          </h3>
+                          <div class="price">Rs 600</div>
+                        </div>
+                        <div class="col-xs-1 action">
+                          <a href="#"><i class="fa fa-trash"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.cart-item -->
+                    <div class="clearfix"></div>
+                    <hr />
+                    <div class="clearfix cart-total">
+                      <div class="pull-right">
+                        <span class="text">Sub Total :</span
+                        ><span class="price">Rs 600</span>
+                      </div>
+                      <div class="clearfix"></div>
+                      <a
+                        href="checkout.html"
+                        class="btn btn-upper btn-primary btn-block m-t-20"
+                        >Checkout</a
+                      >
+                    </div>
+                    <!-- /.cart-total-->
+                  </li>
+                </ul>
+                <!-- /.dropdown-menu-->
+              </div>
+              <!-- /.dropdown-cart -->
+
+              <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
+            </div>
+            <!-- /.top-cart-row -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.main-header -->
+
+      <!-- ============================================== NAVBAR ============================================== -->
+      <div class="header-nav animate-dropdown">
+        <div class="container">
+          <div class="yamm navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button
+                data-target="#mc-horizontal-menu-collapse"
+                data-toggle="collapse"
+                class="navbar-toggle collapsed"
+                type="button"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="nav-bg-class">
+              <div
+                class="navbar-collapse collapse"
+                id="mc-horizontal-menu-collapse"
+              >
+                <div class="nav-outer">
+                  <ul class="nav navbar-nav">
+                    <li class="active dropdown">
+                      <a href="home.html">Home</a>
+                    </li>
+                    <li class="dropdown yamm mega-menu">
+                      <a
+                        href="home.html"
+                        data-hover="dropdown"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        >Seeds</a
+                      >
+                      <ul class="dropdown-menu container">
+                        <li>
+                          <div class="yamm-content">
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                <h2 class="title">Horticulture</h2>
+                                <ul class="links">
+                                  <li><a href="#">Flower Seeds</a></li>
+                                  <li><a href="#">Vegetable Seeds </a></li>
+                                  <li><a href="#">Fruits</a></li>
+                                </ul>
+                              </div>
+                              <!-- /.col -->
+
+                              <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                <h2 class="title">Field Crops</h2>
+                                <ul class="links">
+                                  <li><a href="#">Corn</a></li>
+                                  <li><a href="#">Paddy</a></li>
+                                  <li><a href="#">Jowar </a></li>
+                                  <li><a href="#">Cotton</a></li>
+                                </ul>
+                              </div>
+                              <!-- /.col -->
+
+                              <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                <h2 class="title">Special Categories</h2>
+                                <ul class="links">
+                                  <li><a href="#">Exotics</a></li>
+                                  <li><a href="#">Polyhouse</a></li>
+                                  <li><a href="#">Forgaes</a></li>
+                                  <li><a href="#">Home Garden</a></li>
+                                  <li><a href="#">Micro Greens</a></li>
+                                </ul>
+                              </div>
+                              <!-- /.col -->
+
+                              <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                                <h2 class="title">Saplings</h2>
+                                <ul class="links">
+                                  <li><a href="#">Papaya </a></li>
+                                  <li><a href="#">Coconut</a></li>
+                                </ul>
+                              </div>
+                              <!-- /.col -->
+
+                              <div
+                                class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"
+                              >
+                                <img
+                                  class="img-responsive"
+                                  src="https://images.pexels.com/photos/401213/pexels-photo-401213.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                  alt=""
+                                />
+                              </div>
+                              <!-- /.yamm-content -->
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="dropdown hidden-sm">
+                      <a href="category.html"
+                        >Crop Protection
+                        <span class="menu-label new-menu hidden-xs">new</span>
+                      </a>
+                    </li>
+                    <li class="dropdown hidden-sm">
+                      <a href="category.html">Crop Nutrition</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="contact.html">Segments</a>
+                    </li>
+
+                    <li class="dropdown navbar-right special-menu">
+                      <a href="#">Get 30% off on selected items</a>
+                    </li>
+                  </ul>
+                  <!-- /.navbar-nav -->
+                  <div class="clearfix"></div>
+                </div>
+                <!-- /.nav-outer -->
+              </div>
+              <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.nav-bg-class -->
+          </div>
+          <!-- /.navbar-default -->
+        </div>
+        <!-- /.container-class -->
+      </div>
+      <!-- /.header-nav -->
+      <!-- ============================================== NAVBAR : END ============================================== -->
+    </header>
+
+    <!-- ============================================== HEADER : END ============================================== -->
+    <div class="body-content outer-top-vs" id="top-banner-and-menu">
+      <div class="container">
+        <div class="row">
+          <!-- ============================================== SIDEBAR ============================================== -->
+          <div class="col-xs-12 col-sm-12 col-md-3 sidebar">
+            <div class="side-menu animate-dropdown outer-bottom-xs">
+              <div class="head">
+                <i class="icon fa fa-align-justify fa-fw"></i> Categories
+              </div>
+              <nav class="yamm megamenu-horizontal">
+                <ul class="nav">
+                  <!-- <i class="icon fa fa-shopping-bag" aria-hidden="true"> -->
+                    <div class="category-wrapper">
+                      <div id="productSideCategory"></div>
+                    </div>
+                  </i>
+                </ul>
+              </nav>
+              <!-- <nav class="yamm megamenu-horizontal">
+                <ul class="nav">
+                  <li class="dropdown menu-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      ><i class="icon fa fa-shopping-bag" aria-hidden="true"></i
+                      >Clothing</a
+                    >
+                  </li>
+
+                  <li class="dropdown menu-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      ><i class="icon fa fa-laptop" aria-hidden="true"></i
+                      >Electronics</a
+                    >
+                  </li>
+
+                  <li class="dropdown menu-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      ><i class="icon fa fa-paw" aria-hidden="true"></i>Shoes</a
+                    >
+                  </li>
+
+                  <li class="dropdown menu-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      ><i class="icon fa fa-clock-o"></i>Watches</a
+                    >
+                  </li>
+
+                  <li class="dropdown menu-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      ><i class="icon fa fa-diamond"></i>Jewellery</a
+                    >
+                  </li>
+
+                  <li class="dropdown menu-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      ><i class="icon fa fa-heartbeat"></i>Health and Beauty</a
+                    >
+                  </li>
+
+                  <li class="dropdown menu-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      ><i class="icon fa fa-paper-plane"></i>Kids and Babies</a
+                    >
+                  </li>
+
+                  <li class="dropdown menu-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      ><i class="icon fa fa-futbol-o"></i>Sports</a
+                    >
+                  </li>
+
+                  <li class="dropdown menu-item">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      ><i class="icon fa fa-envira"></i>Home and Garden</a
+                    >
+                  </li>
+                </ul>
+              </nav> -->
+            </div>
+
+            <!-- ============================================== HOT DEALS ============================================== -->
+            <div class="sidebar-widget hot-deals outer-bottom-xs">
+              <h3 class="section-title">Hot deals</h3>
+              <div
+                class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-ss"
+              >
+                <div class="item">
+                  <div class="products">
+                    <div class="hot-deal-wrapper">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-capsicum-green-desi-vegetable-seeds-16968684339340_600x600.jpg?v=1634203353"
+                            alt=""
+                          />
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-capsicum-green-desi-vegetable-seeds-16968684372108_600x600.jpg?v=1634203351"
+                            alt=""
+                            class="hover-image"
+                          />
+                        </a>
+                      </div>
+                      <div class="sale-offer-tag">
+                        <span
+                          >49%<br />
+                          off</span
+                        >
+                      </div>
+                      <div class="timing-wrapper">
+                        <div class="box-wrapper">
+                          <div class="date box">
+                            <span class="key">120</span>
+                            <span class="value">DAYS</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="hour box">
+                            <span class="key">20</span>
+                            <span class="value">HRS</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="minutes box">
+                            <span class="key">36</span>
+                            <span class="value">MINS</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="seconds box">
+                            <span class="key">60</span>
+                            <span class="value">SEC</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.hot-deal-wrapper -->
+
+                    <div class="product-info text-left m-t-20">
+                      <h3 class="name">
+                        <a href="detail.html"
+                          >Capsicum Green - Desi Vegetable Seeds
+                        </a>
+                      </h3>
+                      <div class="rating rateit-small"></div>
+                      <div class="product-price">
+                        <span class="price"> Rs.600.00 </span>
+                        <span class="price-before-discount">Rs.800.00</span>
+                      </div>
+                      <!-- /.product-price -->
+                    </div>
+                    <!-- /.product-info -->
+
+                    <div class="cart clearfix animate-effect">
+                      <div class="action">
+                        <div class="add-cart-button btn-group">
+                          <button
+                            class="btn btn-primary icon"
+                            data-toggle="dropdown"
+                            type="button"
+                          >
+                            <i class="fa fa-shopping-cart"></i>
+                          </button>
+                          <button
+                            class="btn btn-primary cart-btn"
+                            type="button"
+                          >
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.action -->
+                    </div>
+                    <!-- /.cart -->
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="products">
+                    <div class="hot-deal-wrapper">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-coriander-kalmi-desi-vegetable-seeds-16968795914380_600x600.jpg?v=1634203697"
+                            alt=""
+                          />
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-coriander-kalmi-desi-vegetable-seeds-16968795947148_600x600.jpg?v=1634203696"
+                            alt=""
+                            class="hover-image"
+                          />
+                        </a>
+                      </div>
+                      <div class="sale-offer-tag">
+                        <span
+                          >35%<br />
+                          off</span
+                        >
+                      </div>
+                      <div class="timing-wrapper">
+                        <div class="box-wrapper">
+                          <div class="date box">
+                            <span class="key">120</span>
+                            <span class="value">Days</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="hour box">
+                            <span class="key">20</span>
+                            <span class="value">HRS</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="minutes box">
+                            <span class="key">36</span>
+                            <span class="value">MINS</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="seconds box">
+                            <span class="key">60</span>
+                            <span class="value">SEC</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.hot-deal-wrapper -->
+
+                    <div class="product-info text-left m-t-20">
+                      <h3 class="name">
+                        <a href="detail.html"
+                          >Coriander Kalmi - Desi Vegetable Seeds
+                        </a>
+                      </h3>
+                      <div class="rating rateit-small"></div>
+                      <div class="product-price">
+                        <span class="price"> Rs60.00 </span>
+                        <span class="price-before-discount">Rs80.00</span>
+                      </div>
+                      <!-- /.product-price -->
+                    </div>
+                    <!-- /.product-info -->
+
+                    <div class="cart clearfix animate-effect">
+                      <div class="action">
+                        <div class="add-cart-button btn-group">
+                          <button
+                            class="btn btn-primary icon"
+                            data-toggle="dropdown"
+                            type="button"
+                          >
+                            <i class="fa fa-shopping-cart"></i>
+                          </button>
+                          <button
+                            class="btn btn-primary cart-btn"
+                            type="button"
+                          >
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.action -->
+                    </div>
+                    <!-- /.cart -->
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="products">
+                    <div class="hot-deal-wrapper">
+                      <div class="image">
+                        <a href="#">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-zinnia-dahlia-mixed-color-desi-flower-seeds-16969443278988_600x600.jpg?v=1634205292"
+                            alt=""
+                          />
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-zinnia-dahlia-mixed-color-desi-flower-seeds-16969443311756_600x600.jpg?v=1634205289"
+                            alt=""
+                            class="hover-image"
+                          />
+                        </a>
+                      </div>
+                      <div class="sale-offer-tag">
+                        <span
+                          >35%<br />
+                          off</span
+                        >
+                      </div>
+                      <div class="timing-wrapper">
+                        <div class="box-wrapper">
+                          <div class="date box">
+                            <span class="key">120</span>
+                            <span class="value">Days</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="hour box">
+                            <span class="key">20</span>
+                            <span class="value">HRS</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="minutes box">
+                            <span class="key">36</span>
+                            <span class="value">MINS</span>
+                          </div>
+                        </div>
+                        <div class="box-wrapper">
+                          <div class="seconds box">
+                            <span class="key">60</span>
+                            <span class="value">SEC</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.hot-deal-wrapper -->
+
+                    <div class="product-info text-left m-t-20">
+                      <h3 class="name">
+                        <a href="detail.html"
+                          >Zinnia Dahlia Mixed Color - Desi Flower Seeds
+                        </a>
+                      </h3>
+                      <div class="rating rateit-small"></div>
+                      <div class="product-price">
+                        <span class="price"> Rs40.00 </span>
+                        <span class="price-before-discount">Rs60.00</span>
+                      </div>
+                      <!-- /.product-price -->
+                    </div>
+                    <!-- /.product-info -->
+
+                    <div class="cart clearfix animate-effect">
+                      <div class="action">
+                        <div class="add-cart-button btn-group">
+                          <button
+                            class="btn btn-primary icon"
+                            data-toggle="dropdown"
+                            type="button"
+                          >
+                            <i class="fa fa-shopping-cart"></i>
+                          </button>
+                          <button
+                            class="btn btn-primary cart-btn"
+                            type="button"
+                          >
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.action -->
+                    </div>
+                    <!-- /.cart -->
+                  </div>
+                </div>
+              </div>
+              <!-- /.sidebar-widget -->
+            </div>
+            <!-- ============================================== HOT DEALS: END ============================================== -->
+
+            <!-- ============================================== SPECIAL OFFER ============================================== -->
+
+            <div class="sidebar-widget outer-bottom-small">
+              <h3 class="section-title">Special Offer</h3>
+              <div class="sidebar-widget-body outer-top-xs">
+                <div
+                  class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs"
+                >
+                  <div class="item">
+                    <div class="products special-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-combo-pack-seeds-set-of-10-flowering-seeds-to-sow-in-august-september-in-north-india-16969310568588_600x600.jpg?v=1634228341"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a href="#"
+                                    >Set of 10 Flowering Seeds to Sow in August,
+                                    September in North India
+                                  </a>
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> Rs 450</span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-carrot-red-long-desi-vegetable-seeds-16968688566412_600x600.jpg?v=1634203428"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a href="#"
+                                    >Carrot Red Long - Desi Vegetable Seeds
+                                  </a>
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> Rs 27 </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-aster-formula-mixed-colors-flower-seeds-16968606449804_600x600.jpg?v=1634202842"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a href="#"
+                                    >Aster Formula Mixed Colors - Flower Seeds
+                                  </a>
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> Rs 72 </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="products special-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-kochia-plant-burning-bush-foliage-plant-seeds-16968988983436_600x600.jpg?v=1634204142"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a href="#"
+                                    >Kochia Plant, Burning Bush - Foliage Plant
+                                    Seeds
+                                  </a>
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> Rs 45 </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-bulbs-rajnigandha-tuberose-bulbs-16969239363724_600x600.jpg?v=1634227245"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a href="#"
+                                    >Rajnigandha, Tuberose - Bulbs (set of 10)
+                                  </a>
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> Rs 150 </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-combo-pack-seeds-set-of-10-flowering-seeds-to-sow-in-august-september-in-north-india-16969310568588_600x600.jpg?v=1634228341"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a href="#"
+                                    >Set of 10 Flowering Seeds to Sow in August,
+                                    September in North India
+                                  </a>
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> Rs 499 </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="products special-product">
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-kochia-burning-bush-flower-seeds-16969076801676_400x400.jpg?v=1634204130"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a href="#"
+                                    >Kochia Burning Bush - Flower Seeds
+                                  </a>
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> Rs 72 </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-tomato-ped-desi-vegetable-seeds-16969383772300_600x600.jpg?v=1634205174"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a href="#"
+                                    >Tomato Ped - Desi Vegetable Seeds
+                                  </a>
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price"> Rs 27 </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                      <div class="product">
+                        <div class="product-micro">
+                          <div class="row product-micro-row">
+                            <div class="col col-xs-5">
+                              <div class="product-image">
+                                <div class="image">
+                                  <a href="#">
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-sunflower-russian-giant-desi-flower-seeds-16969358606476_600x600.jpg?v=1634204992"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <!-- /.image -->
+                              </div>
+                              <!-- /.product-image -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col col-xs-7">
+                              <div class="product-info">
+                                <h3 class="name">
+                                  <a href="#"
+                                    >Sunflower Russian Giant - Desi Flower Seeds
+                                  </a>
+                                </h3>
+                                <div class="rating rateit-small"></div>
+                                <div class="product-price">
+                                  <span class="price">Rs 27 </span>
+                                </div>
+                                <!-- /.product-price -->
+                              </div>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.product-micro-row -->
+                        </div>
+                        <!-- /.product-micro -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.sidebar-widget-body -->
+            </div>
+            <!-- /.sidebar-widget -->
+
+            <!-- /.sidebar-widget -->
+            <!-- ============================================== SPECIAL DEALS : END ============================================== -->
+          </div>
+          <!-- /.sidemenu-holder -->
+          <!-- ============================================== SIDEBAR : END ============================================== -->
+
+          <!-- ============================================== CONTENT ============================================== -->
+          <div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder">
+            <!-- ========================================== SECTION – HERO ========================================= -->
+
+            <div id="hero">
+              <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
+                <div
+                  class="item"
+                  style="
+                    background-image: url(https://wallpaperaccess.com/full/6246810.jpg);
+                  "
+                >
+                  <div class="container-fluid">
+                    <div class="caption bg-color vertical-center text-left">
+                      <div class="slider-header fadeInDown-1" style="color: #fff;">Top Seeds</div>
+                      <div class="big-text fadeInDown-1" style="color: #fff;">New Collections</div>
+                      <div class="excerpt fadeInDown-2 hidden-xs">
+                        <span style="color: #fff;">Farm Better Together.</span>
+                      </div>
+                      <div class="button-holder fadeInDown-3">
+                        <a
+                          href="index6c11.html?page=single-product"
+                          class="btn-lg btn btn-uppercase btn-primary shop-now-button"
+                          >Shop Now</a
+                        >
+                      </div>
+                    </div>
+                    <!-- /.caption -->
+                  </div>
+                  <!-- /.container-fluid -->
+                </div>
+                <!-- /.item -->
+
+                <div
+                  class="item"
+                  style="
+                    background-image: url(https://wallpapercave.com/wp/wp3759885.jpg);
+                  "
+                >
+                  <div class="container-fluid">
+                    <div class="caption bg-color vertical-center text-left">
+                      <div
+                        class="slider-header fadeInDown-1"
+                        style="color: white"
+                      >
+                        Grow Organic
+                      </div>
+                      <div class="big-text fadeInDown-1" style="color: white">
+                        Eat What You Grow
+                      </div>
+                      <div class="excerpt fadeInDown-2 hidden-xs">
+                        <span style="color: white"
+                          >A seed neither fears light nor darkness, but uses
+                          both to grow</span
+                        >
+                      </div>
+                      <div class="button-holder fadeInDown-3">
+                        <a
+                          href="index6c11.html?page=single-product"
+                          class="btn-lg btn btn-uppercase btn-primary shop-now-button"
+                          >Shop Now</a
+                        >
+                      </div>
+                    </div>
+                    <!-- /.caption -->
+                  </div>
+                  <!-- /.container-fluid -->
+                </div>
+                <!-- /.item -->
+              </div>
+              <!-- /.owl-carousel -->
+            </div>
+
+            <!-- ========================================= SECTION – HERO : END ========================================= -->
+
+            <!-- ============================================== SCROLL TABS ============================================== -->
+            <div id="product-tabs-slider" class="scroll-tabs outer-top-vs">
+              <div class="more-info-tab clearfix">
+                <h3 class="new-product-title pull-left">Our Products</h3>
+                <ul
+                  class="nav nav-tabs nav-tab-line pull-right"
+                  id="new-products-1"
+                >
+                  <li class="active">
+                    <a
+                      data-transition-type="backSlide"
+                      href="#all"
+                      data-toggle="tab"
+                      >Seeds</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-transition-type="backSlide"
+                      href="#smartphone"
+                      data-toggle="tab"
+                      >Field Crops</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-transition-type="backSlide"
+                      href="#laptop"
+                      data-toggle="tab"
+                      >Horticulture</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-transition-type="backSlide"
+                      href="#apple"
+                      data-toggle="tab"
+                      >Plant Nutrition</a
+                    >
+                  </li>
+                </ul>
+                <!-- /.nav-tabs -->
+              </div>
+              <div class="tab-content outer-top-xs">
+                <div class="tab-pane in active" id="all">
+                  <div class="product-slider">
+                    <div
+                      class="owl-carousel home-owl-carousel custom-carousel owl-theme"
+                    >
+                    <div id="card-container" style="display: flex;flex-wrap: wrap; width: 880px;"></div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+              
+            </div>
+            <!-- /.scroll-tabs -->
+            <!-- ============================================== SCROLL TABS : END ============================================== -->
+            <!-- ============================================== WIDE PRODUCTS ============================================== -->
+            <div class="wide-banners outer-bottom-xs">
+              <div class="row">
+                <div class="col-md-4 col-sm-4">
+                  <div class="wide-banner cnt-strip">
+                    <div class="image">
+                      <img
+                        class="img-responsive"
+                        src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/nurserylive-app-home-page-banner-balcony-and-terrace-garden-metal-stand-v3_c1641745-019f-492b-bb98-34fc435c3f8f_670x400.jpg?v=1636743163"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- /.wide-banner -->
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                  <div class="wide-banner cnt-strip">
+                    <div class="image">
+                      <img
+                        class="img-responsive"
+                        src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/nurserylive-app-home-page-banner-plants-v3_9a4542b8-e6b2-4c88-8c5a-0dc0993fac5f_670x400.jpg?v=1636743230"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- /.wide-banner -->
+                </div>
+
+                <!-- /.col -->
+                <div class="col-md-4 col-sm-4">
+                  <div class="wide-banner cnt-strip">
+                    <div class="image">
+                      <img
+                        class="img-responsive"
+                        src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/nurserylive-app-home-page-cactus-and-succulent-banner-v3_1_670x400.jpg?v=1637848499"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- /.wide-banner -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.wide-banners -->
+
+            <!-- /.section -->
+            <!-- ============================================== FEATURED PRODUCTS : END ============================================== -->
+            <!-- ============================================== WIDE PRODUCTS ============================================== -->
+            <div class="wide-banners outer-bottom-xs">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="wide-banner1 cnt-strip">
+                    <div class="image">
+                      <img
+                        class="img-responsive"
+                        src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/nurserylive-mobile-home-page-banner-seeds-flat-50-off-1_800x400.jpg?v=1654088149 "
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="new-label">
+                      <div class="text">NEW</div>
+                    </div>
+                    <!-- /.new-label -->
+                  </div>
+                  <!-- /.wide-banner -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4">
+                  <div class="wide-banner cnt-strip">
+                    <div class="image">
+                      <img
+                        class="img-responsive"
+                        src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/nurserylive-app-home-page-cactus-and-succulent-banner-v3_1_670x400.jpg?v=1637848499"
+                        alt=""
+                      />
+                    </div>
+
+                    <!-- /.new-label -->
+                  </div>
+                  <!-- /.wide-banner -->
+                </div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.wide-banners -->
+            <!-- ============================================== WIDE PRODUCTS : END ============================================== -->
+
+            <!-- /.sidebar-widget -->
+            <!-- ============================================== BEST SELLER : END ============================================== -->
+
+            <!-- ============================================== FEATURED PRODUCTS ============================================== -->
+            <section class="section new-arriavls">
+              <h3 class="section-title">Featured Products</h3>
+              <div
+                class="owl-carousel home-owl-carousel custom-carousel owl-theme outer-top-xs"
+              >
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-bulbs-gladiolus-white-bulbs-16968886878348_600x600.jpg?v=1634220362"
+                              alt=""
+                            />
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-bulbs-gladiolus-white-bulbs-16968886878348_600x600.jpg?v=1634220362"
+                              alt=""
+                              class="hover-image"
+                            />
+                          </a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag new"><span>new</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a href="detail.html"
+                            >Gladiolus (White) - Bulbs (set of 10)
+                          </a>
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> Rs 179 </span>
+                          <span class="price-before-discount">Rs 200</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Wishlist"
+                              >
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Compare"
+                              >
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-lavender-flower-seeds-16969077260428_600x600.jpg?v=1634204151"
+                              alt=""
+                            />
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-lavender-flower-seeds-16969077260428_600x600.jpg?v=1634204151"
+                              alt=""
+                              class="hover-image"
+                            />
+                          </a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag new"><span>new</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a href="detail.html">Lavender - Flower Seeds </a>
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> Rs 72 </span>
+                          <span class="price-before-discount">Rs 145</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Wishlist"
+                              >
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Compare"
+                              >
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-okra-arka-anamika-desi-vegetable-seeds-16969047048332_600x600.jpg?v=1634204377"
+                              alt=""
+                            />
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-okra-arka-anamika-desi-vegetable-seeds-16969047048332_600x600.jpg?v=1634204377"
+                              alt=""
+                              class="hover-image"
+                            />
+                          </a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag hot"><span>hot</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a href="detail.html"
+                            >Okra Arka Anamika - Desi Vegetable Seeds
+                          </a>
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> Rs 450.99 </span>
+                          <span class="price-before-discount">Rs 800</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Wishlist"
+                              >
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Compare"
+                              >
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-marigold-perfection-orange-flower-seeds-16969088139404_600x600.jpg?v=1634204300"
+                              alt=""
+                            />
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-marigold-perfection-orange-flower-seeds-16969088139404_600x600.jpg?v=1634204300"
+                              alt=""
+                              class="hover-image"
+                            />
+                          </a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag hot"><span>hot</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a href="detail.html"
+                            >Marigold Perfection Orange - Flower Seeds
+                          </a>
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> Rs 72 </span>
+                          <span class="price-before-discount">Rs 145</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Wishlist"
+                              >
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Compare"
+                              >
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-combo-pack-seeds-set-of-10-flowering-seeds-to-sow-in-june-july-in-north-india-16969311420556_600x600.jpg?v=1634228389"
+                              alt=""
+                            />
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-combo-pack-seeds-set-of-10-flowering-seeds-to-sow-in-june-july-in-north-india-16969311420556_600x600.jpg?v=1634228389"
+                              alt=""
+                              class="hover-image"
+                            />
+                          </a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag sale"><span>sale</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a href="detail.html"
+                            >Set of 10 Flowering Seeds to Sow in June, July in
+                            North India
+                          </a>
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> Rs 450 </span>
+                          <span class="price-before-discount">Rs 1180</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Wishlist"
+                              >
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Compare"
+                              >
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+
+                <div class="item item-carousel">
+                  <div class="products">
+                    <div class="product">
+                      <div class="product-image">
+                        <div class="image">
+                          <a href="detail.html">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-rosemary-herb-seeds-16969117466764_600x600.jpg?v=1634204791"
+                              alt=""
+                            />
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-rosemary-herb-seeds-16969117466764_600x600.jpg?v=1634204791"
+                              alt=""
+                              class="hover-image"
+                            />
+                          </a>
+                        </div>
+                        <!-- /.image -->
+
+                        <div class="tag sale"><span>sale</span></div>
+                      </div>
+                      <!-- /.product-image -->
+
+                      <div class="product-info text-left">
+                        <h3 class="name">
+                          <a href="detail.html">Rosemary - Herb Seeds </a>
+                        </h3>
+                        <div class="rating rateit-small"></div>
+                        <div class="description"></div>
+                        <div class="product-price">
+                          <span class="price"> Rs 72 </span>
+                          <span class="price-before-discount">Rs 145</span>
+                        </div>
+                        <!-- /.product-price -->
+                      </div>
+                      <!-- /.product-info -->
+                      <div class="cart clearfix animate-effect">
+                        <div class="action">
+                          <ul class="list-unstyled">
+                            <li class="add-cart-button btn-group">
+                              <button
+                                class="btn btn-primary icon"
+                                data-toggle="dropdown"
+                                type="button"
+                              >
+                                <i class="fa fa-shopping-cart"></i>
+                              </button>
+                              <button
+                                class="btn btn-primary cart-btn"
+                                type="button"
+                              >
+                                Add to cart
+                              </button>
+                            </li>
+                            <li class="lnk wishlist">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Wishlist"
+                              >
+                                <i class="icon fa fa-heart"></i>
+                              </a>
+                            </li>
+                            <li class="lnk">
+                              <a
+                                class="add-to-cart"
+                                href="detail.html"
+                                title="Compare"
+                              >
+                                <i class="fa fa-signal" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.action -->
+                      </div>
+                      <!-- /.cart -->
+                    </div>
+                    <!-- /.product -->
+                  </div>
+                  <!-- /.products -->
+                </div>
+                <!-- /.item -->
+              </div>
+              <!-- /.home-owl-carousel -->
+            </section>
+            <!-- /.section -->
+            <!-- ============================================== FEATURED PRODUCTS : END ============================================== -->
+          </div>
+          <!-- /.homebanner-holder -->
+          <!-- ============================================== CONTENT : END ============================================== -->
+        </div>
+        <!-- /.row -->
+        <!-- ============================================== BRANDS CAROUSEL ============================================== -->
+        <div id="brands-carousel" class="logo-slider">
+          <div class="logo-slider-inner">
+            <div
+              id="brand-slider"
+              class="owl-carousel brand-slider custom-carousel owl-theme"
+            >
+              <div class="item m-t-15">
+                <a href="#" class="image">
+                  <img
+                    data-echo="https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/nurserylive-flowering-seeds-category-image_244x244.jpg?v=1615987398"
+                    src="https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/nurserylive-flowering-seeds-category-image_244x244.jpg?v=1615987398"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+
+              <div class="item m-t-10">
+                <a href="#" class="image">
+                  <img
+                    data-echo="https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/nurserylive-hybrid-flowering-seeds-category-image_244x244.jpg?v=1616132959"
+                    src="assets/images/blank.gif"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+
+              <div class="item">
+                <a href="#" class="image">
+                  <img
+                    data-echo="https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/208243ea2a5605e9943058a60a3cf1e7_244x244.jpg?v=1614086311"
+                    src="assets/images/blank.gif"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+
+              <div class="item">
+                <a href="#" class="image">
+                  <img
+                    data-echo="https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/nurserylive-tree-forestry-seeds-category-images_244x244.jpg?v=1641299220"
+                    src="assets/images/blank.gif"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+
+              <div class="item">
+                <a href="#" class="image">
+                  <img
+                    data-echo="https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/nurserylive-tree-forestry-seeds-category-images_244x244.jpg?v=1641299220"
+                    src="assets/images/blank.gif"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+
+              <div class="item">
+                <a href="#" class="image">
+                  <img
+                    data-echo="https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/105c40dc1fe3bb74ec1a34116a763706_310x310.jpg?v=1614003474"
+                    src="assets/images/blank.gif"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+
+              <div class="item">
+                <a href="#" class="image">
+                  <img
+                    data-echo="https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/82e85625dc538dcc8781a8f234e9c7cd_310x310.jpg?v=1614046616"
+                    src="assets/images/blank.gif"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+
+              <div class="item">
+                <a href="#" class="image">
+                  <img
+                    data-echo="assets/images/brands/brand4.png"
+                    src="assets/images/blank.gif"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+
+              <div class="item">
+                <a href="#" class="image">
+                  <img
+                    data-echo="https://cdn.shopify.com/s/files/1/0047/9730/0847/collections/c9cb804384a431392eb3d2a53bd8074c_310x310.jpg?v=1614060943"
+                    src="assets/images/blank.gif"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+
+              <div class="item">
+                <a href="#" class="image">
+                  <img
+                    data-echo="assets/images/brands/brand5.png"
+                    src="assets/images/blank.gif"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!--/.item-->
+            </div>
+            <!-- /.owl-carousel #logo-slider -->
+          </div>
+          <!-- /.logo-slider-inner -->
+        </div>
+        <!-- /.logo-slider -->
+        <!-- ============================================== BRANDS CAROUSEL : END ============================================== -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /#top-banner-and-menu -->
+
+    <!-- ============================================== INFO BOXES ============================================== -->
+    <div class="row our-features-box">
+      <div class="container">
+        <ul>
+          <li>
+            <div class="feature-box">
+              <div class="icon-truck"></div>
+              <div class="content-blocks">We ship worldwide</div>
+            </div>
+          </li>
+          <li>
+            <div class="feature-box">
+              <div class="icon-support"></div>
+              <div class="content-blocks">call +91 914448988842</div>
+            </div>
+          </li>
+          <li>
+            <div class="feature-box">
+              <div class="icon-money"></div>
+              <div class="content-blocks">Money Back Guarantee</div>
+            </div>
+          </li>
+          <li>
+            <div class="feature-box">
+              <div class="icon-return"></div>
+              <div class="content">30 days return</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.info-boxes -->
+    <!-- ============================================== INFO BOXES : END ============================================== -->
+
+    <!-- ============================================================= FOOTER ============================================================= -->
+    <footer id="footer" class="footer color-bg">
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="address-block">
+                <!-- /.module-heading -->
+
+                <div class="module-body">
+                  <ul class="toggle-footer" style="">
+                    <li class="media">
+                      <div class="pull-left">
+                        <span class="icon fa-stack fa-lg">
+                          <i
+                            class="fa fa-map-marker fa-stack-1x fa-inverse"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="media-body">
+                        <p>
+                          45/2, MS Office, College Road, Nungambakkam , Chennai
+                          - 600006
+                        </p>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="pull-left">
+                        <span class="icon fa-stack fa-lg">
+                          <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <div class="media-body">
+                        <p>+91 914448988842</p>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="pull-left">
+                        <span class="icon fa-stack fa-lg">
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <div class="media-body">
+                        <span><a href="#">support@farmgate.in</a></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.module-body -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="module-heading">
+                <h4 class="module-title">Customer Service</h4>
+              </div>
+              <!-- /.module-heading -->
+
+              <div class="module-body">
+                <ul class="list-unstyled">
+                  <li class="first">
+                    <a href="#" title="Contact us">My Account</a>
+                  </li>
+                  <li><a href="#" title="About us">Order History</a></li>
+                  <li><a href="#" title="faq">FAQ</a></li>
+                  <li><a href="#" title="Popular Searches">Specials</a></li>
+                  <li class="last">
+                    <a href="#" title="Where is my order?">Help Center</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.module-body -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="module-heading">
+                <h4 class="module-title">Corporation</h4>
+              </div>
+              <!-- /.module-heading -->
+
+              <div class="module-body">
+                <ul class="list-unstyled">
+                  <li class="first">
+                    <a title="Your Account" href="#">About us</a>
+                  </li>
+                  <li><a title="Information" href="#">Customer Service</a></li>
+                  <li><a title="Addresses" href="#">Company</a></li>
+                  <li><a title="Addresses" href="#">Investor Relations</a></li>
+                  <li class="last">
+                    <a title="Orders History" href="#">Advanced Search</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.module-body -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="module-heading">
+                <h4 class="module-title">Why Choose Us</h4>
+              </div>
+              <!-- /.module-heading -->
+
+              <div class="module-body">
+                <ul class="list-unstyled">
+                  <li class="first">
+                    <a href="#" title="About us">Shopping Guide</a>
+                  </li>
+                  <li><a href="#" title="Blog">Blog</a></li>
+                  <li><a href="#" title="Company">Company</a></li>
+                  <li>
+                    <a href="#" title="Investor Relations"
+                      >Investor Relations</a
+                    >
+                  </li>
+                  <li class="last">
+                    <a href="contact-us.html" title="Suppliers">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.module-body -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-bar">
+        <div class="container">
+          <div class="col-xs-12 col-sm-4 no-padding social">
+            <ul class="link">
+              <li class="fb pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="Facebook"></a>
+              </li>
+              <li class="tw pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="Twitter"></a>
+              </li>
+              <li class="googleplus pull-left">
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="#"
+                  title="GooglePlus"
+                ></a>
+              </li>
+              <li class="rss pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="RSS"></a>
+              </li>
+              <li class="pintrest pull-left">
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href="#"
+                  title="PInterest"
+                ></a>
+              </li>
+              <li class="linkedin pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="Linkedin"></a>
+              </li>
+              <li class="youtube pull-left">
+                <a target="_blank" rel="nofollow" href="#" title="Youtube"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 no-padding copyright">
+            <a target="_blank" href="https://www.truetechsolutions.in/"
+              >TrueTech Solutions</a
+            >
+          </div>
+          <div class="col-xs-12 col-sm-4 no-padding">
+            <div class="clearfix payment-methods">
+              <ul>
+                <li><img src="assets/images/payments/1.png" alt="" /></li>
+                <li><img src="assets/images/payments/2.png" alt="" /></li>
+                <li><img src="assets/images/payments/3.png" alt="" /></li>
+                <li><img src="assets/images/payments/4.png" alt="" /></li>
+                <li><img src="assets/images/payments/5.png" alt="" /></li>
+              </ul>
+            </div>
+            <!-- /.payment-methods -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div style="display: none">
+      <div id="myData"></div>
+      <div id="productName"></div>
+      <div id="product1"></div>
+      <div id="card-container"></div>
+    </div>
+
+    <!-- <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+      </div>
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  </section> -->
+
+    <!-- ============================================================= FOOTER : END============================================================= -->
+
+    <!-- For demo purposes – can be removed on production -->
+
+    <!-- For demo purposes – can be removed on production : End -->
+
+    <!-- JavaScripts placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/echo.min.js"></script>
+    <script src="assets/js/jquery.easing-1.3.min.js"></script>
+    <script src="assets/js/bootstrap-slider.min.js"></script>
+    <script src="assets/js/jquery.rateit.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
